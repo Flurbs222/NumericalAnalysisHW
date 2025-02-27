@@ -133,9 +133,82 @@
     \begin{enumerate}[leftmargin=!]
         %5a
         \item 
+        \begin{proof}
+            By the extreme value theorem. $f$ has a maximum and minimum on $[a,b]$. Therefore, there exists $x_{\min},x_{\max}\in [a,b]$ such that
+            $f(x_{\min})= \min\limits_{a\leq x\leq b} f(x)$ and $f(x\max)= \max\limits_{a\leq x\leq b} f(x)$. Furthermore, by definition of the maximum and minimum, we have
+            \[f(x_{\min}) = \frac{nf(x_{\min})}{n} = \frac{\sum\limits_{i=1}^{n} f(x_{\min})}{n} \leq \frac{\sum\limits_{i=1}^{n} f(x_{i})}{n} \leq \frac{\sum\limits_{i=1}^{n} f(x_{\max})}{n}= f(x_{\max}).\]
+            Therefore, by the intermediate value theorem, there exists an $c \in [x_{\min},x_{\max}]\subseteq [a,b]$ such that 
+            \[f(c)= \frac{\sum\limits_{i=1}^{n} f(x_{i})}{n}\]
+            which is the desired result.
+        \end{proof}
 
         %5b
         \item 
+        \begin{theorem}[Integral Mean Value Theorem for $g(x)=1$]\label{thm:intMVT} Let $f$ be a continuous function on $[a,b]$. Then there exists a $c\in [a.b]$ such that
+            \[f(c)(b-a)=\int_{a}^{b}f(x)dx.\]
+        \end{theorem}
+        \begin{lemma}\label{lem:nonnegativeint}
+            Let $f$ be a Riemann integrable function on $[a,b]$, such that 
+            \[f(x)\geq 0\]
+            for all $x\in [a,b]$. Then
+            \[\int_{a}^{b}f(x)dx \geq 0.\]
+        \end{lemma}
+        \begin{proof}[Proof of Lemma~\ref{lem:nonnegativeint}]
+            Let $P=\{a=x_0,x_1,\ldots,x_n=b\}$ be an arbitrary  partition of $[a,b]$. Since $f(x)\geq 0$ on $[a,b]$, we have that
+            \[U(f,P) := \sum_{i=1}^{n} (x_i-x_{i-1})M_i \geq 0\]
+            and
+            \[L(f,P):= \sum_{i=1}^{n} (x_i-x_{i-1})m_i \geq 0\]
+            where $M_i:= \sup\limits_{x\in [x_{i-1},x_i]} f(x)$ and $M_i:= \inf\limits_{x\in [x_{i-1},x_i]} f(x)$. Therefore, since $P$ was arbitrary, we must have that
+            \[\overline{\int_{a}^{b}} f(x)dx := \inf\{U(f,P)\, |\, P \text{ is a partition of } [a,b]\} \geq 0.\]
+            Since $f$ is Riemann integrable, we finally have that
+            \[\int_{a}^{b} f(x)dx = \overline{\int_{a}^{b}} f(x)dx\geq 0\]
+            which is the desired result.
+        \end{proof}
+        \begin{lemma}\label{lem:intcomparison}
+            Let $f$ and $g$ be Riemann integrable functions on $[a,b]$ such that for all $x\in [a,b]$,
+            \[f(x)\geq g(x).\]
+            Then
+            \[\int_{a}^{b} f(x)dx\geq \int_{a}^{b} g(x)dx\]
+        \end{lemma}
+        \begin{proof}[Proof of Lemma~\ref{lem:intcomparison}]
+            Consider $h(x):= f(x)-g(x)$. Since $f$ and $g$ are Riemann integrable on $[a,b]$, $h$ is also Riemann integrable on $[a,b]$. Furthermore, since 
+            $f(x)\geq g(x)$ for all $x\in [a,b]$,
+            \[h(x)\geq 0\]
+            for all $x\in [a,b]$. Therefore, by Lemma~\ref{lem:nonnegativeint} and the additivity of the Riemann integral, we have that
+            \[\int_{a}^{b}f(x)dx - \int_{a}^{b} g(x)dx \geq 0.\]
+            Adding $\int_{a}^{b}g(x)dx$ to both sides completes the proof.
+        \end{proof}
+        \begin{lemma}\label{lem:corollarytocomparison}
+            Let $f$ and $g$ be Riemann integrable functions on $[a,b]$ such that for all $x\in [a,b]$,
+            \[f(x)\leq g(x).\]
+            Then
+            \[\int_{a}^{b} f(x)dx\leq \int_{a}^{b} g(x)dx\]
+        \end{lemma}
+        \begin{proof}[Proof of Lemma~\ref{lem:corollarytocomparison}]
+            Since $f(x)\leq g(x)$ on $[a,b]$, then $-f(x)\geq -g(x)$ on $[a,b]$. Furthermore, since $f$ and $g$ are both Riemann integrable, then $-f$ and $-g$ are also both Riemann integrable. Therefore, by Lemma~\ref{lem:intcomparison} and the linearity of the integral, we have
+            \[-\int_{a}^{b}f(x)dx \geq -\int_{a}^{b}g(x)dx.\]
+            Multiplying by $-1$ completes the proof.
+        \end{proof}
+        \newpage
+        \begin{lemma}\label{lem:comparisontheorem}
+            Let $f$ be a continuous function\footnote{Continuous on $[a,b]$ also implies Riemann integrable on $[a,b]$.} on $[a,b]$. Let\footnote{These values exist by the extreme value theorem.} $m=\min_{a\leq x\leq b} f(x)$ and $M=\max_{a\leq x\leq b}f(x)$. 
+            Then
+            \[m(b-a)\leq \int_{a}^{b} f(x)dx \leq M(b-a).\]
+        \end{lemma}
+        \begin{proof}[Proof of Lemma~\ref{lem:comparisontheorem}]
+            Since $m\leq f(x)\leq M$ for all $x\in [a,b]$. By Lemma~\ref{lem:intcomparison}, Lemma~\ref{lem:corollarytocomparison}, and properties of the Riemann integral, we have that
+            \[m(b-a)=\int_{a}^{b} m dx \leq  \int_{a}^{b} f(x) dx \leq \int_{a}^{b} M dx = M(b-a) \]
+            which was the desired result.
+        \end{proof}
+        \begin{proof}[Proof of Theorem~\ref{thm:intMVT}]
+            Since $f$ is continuous on $[a,b]$, $f$ attains a maximum and minimum on $[a,b]$, say $M$ and $m$ respectively. Then by Lemma~\ref{lem:comparisontheorem}, we have that
+            \[m(b-a)\leq \int_{a}^{b} f(x) dx\leq M(b-a)\]
+            which implies that
+            \[m\leq \frac{1}{b-a} \int_{a}^{b} f(x) dx \leq M.\]
+            Therefore, by the Intermediate Value Theorem, there exists\footnote{Technically $c\in [x_{\min},x_{\max}]$ where $f(x_{\min})=m$ and $f(x_{\max})= M$. However, we will skip over that detail as $[x_{\min},x_{\max}]\subseteq [a,b]$.} a $c\in [a,b]$ such that
+            \[f(x)=\frac{1}{b-a}\int_{a}^{b}f(x)dx.\]
+            Multiplying by $(b-a)$ gives the desired result.
+        \end{proof}
     \end{enumerate}
     
     %Question 6
