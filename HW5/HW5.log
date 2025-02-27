@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.4)  27 FEB 2025 11:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.4)  27 FEB 2025 11:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/floradedvukaj/HW2/HW4/HW4
-(/Users/floradedvukaj/HW2/HW4/HW4.tex
+**/Users/floradedvukaj/HW2/HW5/HW5
+(/Users/floradedvukaj/HW2/HW5/HW5.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
@@ -737,8 +737,8 @@ Package: cancel 2013/04/12 v2.2 Cancel math terms
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count355
 \l__pdf_internal_box=\box117
-) (./HW4.aux)
-\openout1 = `HW4.aux'.
+) (./HW5.aux)
+\openout1 = `HW5.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
@@ -825,9 +825,9 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring ON on input line 8.
- (./HW4.out) (./HW4.out)
+ (./HW5.out) (./HW5.out)
 \@outlinefile=\write5
-\openout5 = `HW4.out'.
+\openout5 = `HW5.out'.
 
 LaTeX Info: Redefining \microtypecontext on input line 8.
 Package microtype Info: Applying patch `item' on input line 8.
@@ -848,44 +848,33 @@ Package microtype Info: No adjustment of character kerning.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
-Overfull \hbox (5.0445pt too wide) in paragraph at lines 23--24
-[]\OT1/cmr/m/n/12 (-20) We are given the points $(0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 (-20) 7)\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 (-20) (2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 (-20) 11)\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 (-20) (3\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 (-20) 28)\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 (-20) (4\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 (-20) 63)$, so $\OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (-20) (\OML/cmm/m/it/12 x[]\OT1/cmr/m/n/12 (-20) ) = 7\OML/cmm/m/it/12 ; f\OT1/cmr/m/n/12 (-20) (\OML/cmm/m/it/12 x[]\OT1/cmr/m/n/12 (-20) ) = 11\OML/cmm/m/it/12 ; f\OT1/cmr/m/n/12 (-20) (\OML/cmm/m/it/12 x[]\OT1/cmr/m/n/12 (-20) ) =
+Underfull \hbox (badness 10000) in paragraph at lines 18--22
+
  []
 
 [1{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
-] [2] (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-msa.cfg
-File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
-) (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-msb.cfg
-File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-)
-pdfTeX warning (font expansion): font should be expanded before its first use
-[3] [4]
-Overfull \hbox (57.89241pt too wide) detected at line 210
-\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]; y[]\OT1/cmr/m/n/12 ) = (0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 29004996)\OML/cmm/m/it/12 ;  \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]; y[]\OT1/cmr/m/n/12 ) = (0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 56079734)\OML/cmm/m/it/12 ;  \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]; y[]\OT1/cmr/m/n/12 ) = (0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 3\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 81401972)\OML/cmm/m/it/12 :
- []
-
-[5] [6] [7] [8] (./HW4.aux)
+] [2] [3] (./HW5.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
-Package rerunfilecheck Info: File `HW4.out' has not changed.
+Package rerunfilecheck Info: File `HW5.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 29182 strings out of 474116
- 530986 string characters out of 5743683
- 1945187 words of memory out of 5000000
- 50945 multiletter control sequences out of 15000+600000
- 572264 words of font info for 121 fonts, out of 8000000 for 9000
+ 29023 strings out of 474116
+ 528421 string characters out of 5743683
+ 1950187 words of memory out of 5000000
+ 50853 multiletter control sequences out of 15000+600000
+ 566185 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 113i,15n,121p,3291b,768s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on HW4.pdf (8 pages, 203258 bytes).
+ 113i,12n,121p,3269b,634s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on HW5.pdf (3 pages, 96430 bytes).
 PDF statistics:
- 163 PDF objects out of 1000 (max. 8388607)
- 117 compressed objects within 2 object streams
- 31 named destinations out of 1000 (max. 500000)
- 32781 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 81 PDF objects out of 1000 (max. 8388607)
+ 59 compressed objects within 1 object stream
+ 18 named destinations out of 1000 (max. 500000)
+ 14349 words of extra memory for PDF output out of 14400 (max. 10000000)
 
