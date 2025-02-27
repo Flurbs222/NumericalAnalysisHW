@@ -216,10 +216,10 @@
     \begin{enumerate}[leftmargin=!]
         %6a
         \item We must show that the Simpson Rule $S_2$ has no error for polynomials $1, x, x^{2}, x^{3}$ over a given interval. Consider the third-degree polynomial \( f(x) = ax^3 + bx^2 + cx + d \).
-        \(S_2 = \int _{a}^{b}f(x)dx\approx \frac{h}{3}\left[f(a)+4f\left(\frac{a+b}{2}\right)+f(b)\right]\),
+        \[S_2 = \int _{a}^{b}f(x)dx\approx \frac{h}{3}\left[f(a)+4f\left(\frac{a+b}{2}\right)+f(b)\right]\]
         where $h = \frac{b-a}{2}$.
-        Plugging in f(x) yields:
-        \(\int _{a}^{b}(ax^{3}+bx^{2}+cx+d)dx\approx \frac{b-a}{6}\left[(a\cdot a^{3}+b\cdot a^{2}+c\cdot a+d)+4\left(a\left(\frac{a+b}{2}\right)^{3}+b\left(\frac{a+b}{2}\right)^{2}+c\left(\frac{a+b}{2}\right)+d\right)+(a\cdot b^{3}+b\cdot b^{2}+c\cdot b+d)\right]\).
+        Plugging in $f(x)$ yields
+        \[\int _{a}^{b}(ax^{3}+bx^{2}+cx+d)dx\approx \frac{b-a}{6}\left[(a\cdot a^{3}+b\cdot a^{2}+c\cdot a+d)+4\left(a\left(\frac{a+b}{2}\right)^{3}+b\left(\frac{a+b}{2}\right)^{2}+c\left(\frac{a+b}{2}\right)+d\right)+(a\cdot b^{3}+b\cdot b^{2}+c\cdot b+d)\right]\].
         \( = \frac{b-a}{6}\left[2a(a^{3}+b^{3})+2b(a^{2}+b^{2})+2c(a+b)+6d\right]\)
         \( = \frac{a}{4}(b^{4}-a^{4})+\frac{b}{3}(b^{3}-a^{3})+\frac{c}{2}(b^{2}-a^{2})+d(b-a)\).
         The exact integral of f(x) is:
