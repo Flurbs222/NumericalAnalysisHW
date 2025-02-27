@@ -227,7 +227,10 @@
         $S_2$ is equal to \(\int _{a}^{b}f(x)dx\), so it has a degree of precision 3.
         %6b
         \item
-
+        We must show that the error when integrating any polynomial of degree three or less using Simpson's rule is zero, while the error for a polynomial of degree four or higher is non-zero.
+        \(|E_{S}| = -\frac{(b-a)^{5}}{180}h^{4}f^{4}\)
+        Let f(x) = $x^3$. The fourth derivative of $f(x)$ is $f^{4}(x) = 0$. Substituting this into the error formula, we get $E = 0$, which means Simpson's rule will give the exact integral for any cubic polynomial.
+        Let f(x) = $x^4$. The fourth derivative of $f(x)$ is $f^{4}(x) = 24$. Substituting this into the error formula, we get $E \neq 0$, indicating that Simpson's rule will not give the exact integral for a quartic polynomial. 
         %6c
         \item
     \end{enumerate}
