@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.2.23)  27 FEB 2025 14:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.2.23)  27 FEB 2025 22:36
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -848,7 +848,7 @@ Package microtype Info: No adjustment of character kerning.
  (C:\Users\video\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
-Underfull \hbox (badness 10000) in paragraph at lines 18--22
+Underfull \hbox (badness 10000) in paragraph at lines 19--23
 
  []
 
@@ -856,7 +856,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--22
 
 [1{C:/Users/video/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
-]
+] (C:\Users\video\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+) (C:\Users\video\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+Overfull \hbox (39.823pt too wide) detected at line 115
+\OT1/cmr/m/n/12 4 [] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 3\OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 ^^@ [] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 O\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 h[]\OT1/cmr/m/n/12 )[][][][][] = 2\OML/cmm/m/it/12 hf[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) + \OML/cmm/m/it/12 O\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 h[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 :
+ []
+
+
 
 [2]
 
@@ -864,20 +873,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--22
 
 [4]
 
-[5] (C:\Users\video\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
-File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
-) (C:\Users\video\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
-File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-)
-Overfull \hbox (285.57802pt too wide) detected at line 222
-[][]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ax[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 bx[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 cx \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 d\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 dx \OMS/cmsy/m/n/12 ^^Y [] []
+[5]
+
+[6]
+
+[7]
+Overfull \hbox (25.28548pt too wide) detected at line 260
+\OML/cmm/m/it/12 S[] \OT1/cmr/m/n/12 = [] [] = [](2\OML/cmm/m/it/12 a[] \OT1/cmr/m/n/12 + 2\OML/cmm/m/it/12 b[] \OT1/cmr/m/n/12 + 2\OML/cmm/m/it/12 ab\OT1/cmr/m/n/12 ) = [] = [][] \OML/cmm/m/it/12 x[] dx :
  []
 
 
 
-[6]
+[8]
 
-[7] (HW5.aux)
+[9] (HW5.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-07-20>
@@ -886,17 +895,17 @@ Package rerunfilecheck Info: File `HW5.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 29309 strings out of 473899
- 538226 string characters out of 5726500
+ 29312 strings out of 473899
+ 538249 string characters out of 5726500
  1950960 words of memory out of 5000000
  51585 multiletter control sequences out of 15000+600000
  569647 words of font info for 113 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 113i,12n,121p,3354b,924s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 113i,12n,121p,3354b,887s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/video/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/video/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/video/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/video/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/video/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/video/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/video/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/video/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/video/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/video/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/video/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/video/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/video/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/video/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/video/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on HW5.pdf (7 pages, 214933 bytes).
+Output written on HW5.pdf (9 pages, 223371 bytes).
 PDF statistics:
- 155 PDF objects out of 1000 (max. 8388607)
- 30 named destinations out of 1000 (max. 500000)
+ 166 PDF objects out of 1000 (max. 8388607)
+ 33 named destinations out of 1000 (max. 500000)
  22541 words of extra memory for PDF output out of 24883 (max. 10000000)
 

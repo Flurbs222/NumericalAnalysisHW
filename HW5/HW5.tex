@@ -15,6 +15,7 @@
 \end{center}
 \begin{enumerate}[leftmargin=2em]
     %Question 1
+    \item
     Let $f (x) = 3xe^x - cos x$. By using the forward-difference formula, the three-point
 midpoint formula, and the five-point midpoint formula with $h = 0.1, 0.05,
 0.01$, compute approximations of $f'(1.3)$.\\
@@ -42,7 +43,7 @@ h & \text{Rule} & x & f(x) \\
 \end{array}
 \]
 
-\subsection*{Forward Difference}
+
 \[
 f'(x_0) = \frac{1}{h}(f(x_0+h)-f(x_0)) + O(h)
 \]
@@ -104,7 +105,15 @@ For $h = 0.01$
 All of these methods improve as $h$ decreases, but those with higher orders converge much faster. The Five-Point Midpoint method is the most precise, but it may be computationally intensive.
 
     %Question 2
-    \item 
+    \item
+    Note that using taylor expansions around $x$, we get that
+    \[f(x+h)=f(x)+hf'(x)+\frac{h^2}{2}f''(x)+O(h^3)\]
+    and
+    \[f(x+2h)=f(x)+2hf'(x)+2h^2f''(x)+O(h^3).\]
+    Therefore, we have
+    \[4f(x+h)-3f(x)-f(x+2h)=\]
+    \[ 4\left(f(x)+hf'(x)+\frac{h^2}{2}f''(x)\right)-3f(x)-\left(f(x)+2hf'(x)+2h^2f''(x)\right)+O(h^3)\footnote{If $f=O(h^3)$ and $g=O(h^3)$, then $f+g=O(h^3)$.} = 2hf'(x)+O(h^3).\]
+    Dividing by $2h$ gives that the error term equals $O(h^2)$, which is the desired result.
 
     %Question 3
     \item We can differentiate $y=x^{3}$ as follows:
@@ -138,8 +147,16 @@ All of these methods improve as $h$ decreases, but those with higher orders conv
 
 
     %Question 4
-    \item 
-
+    \item
+    Note that
+    \[f^{(4)}(x)= (12-48x^2+16x^4)e^{-x^2}.\]
+    On $[0,1]$, the above function attains a maximum at $x=0$, with a value of $12$. Therefore, we have that for some $\xi \in [0,1]$,
+    \[|E_n(f)|=\left|\frac{-1}{180}h^4f^{(4)}(\xi)\right|\leq \frac{12}{180}h^4.\]
+    Solving for $h$ in the above inequality gives 
+    \[h\leq 0.01967\ldots.\]
+    Noting that $n=\frac{1}{h}$ then gives
+    \[n\geq 50.813\ldots.\]
+    Therefore, $n=52$, is the smallest possible $n$ that gives us an error of $\leq 10^{-8}$.
     %Question 5
     \item
     \begin{enumerate}[leftmargin=!]
@@ -228,33 +245,34 @@ All of these methods improve as $h$ decreases, but those with higher orders conv
     \begin{enumerate}[leftmargin=!]
         %6a
         \item We must show that the Simpson Rule $S_2$ has no error for polynomials $1, x, x^{2}, x^{3}$, but has an error for $x^{4}$, over a given interval, say, from $x = -i$ to $x = i$. Let us check for exactness for polynomials of increasing degree.
-        Check for \(f(x)=1\):
-        \(\int _{-i}^{i}1dx=x\Big|_{-i}^{i}=i-(-i)=2i\).
-        \(S_{2}=\frac{i-(-i)}{6}[1+4(1)+1]=\frac{2i}{6}(6)=2i\).
-        The results are equal.
-        Check for \(f(x)=x\):
-        \(\int _{-i}^{i}xdx=\frac{1}{2}x^{2}\Big|_{-i}^{i}=\frac{1}{2}(i^{2}-(-i)^{2})=\frac{1}{2}(-1-(-1))=0\).
-        \(S_{2}=\frac{i-(-i)}{6}[-i+4(0)+i]=\frac{2i}{6}(0)=0\).
-        The results are equal.
-        Check for \(f(x)=x^{2}\):
-        \(\int _{-i}^{i}x^{2}dx=\frac{1}{3}x^{3}\Big|_{-i}^{i}=\frac{1}{3}(i^{3}-(-i)^{3})=\frac{1}{3}(-i-i)=-\frac{2}{3}i\).
-        \(S_{2}=\frac{i-(-i)}{6}[(-i)^{2}+4(0)^{2}+(i)^{2}]=\frac{2i}{6}[-1+0-1]=\frac{2i}{6}(-2)=-\frac{2}{3}i\).
-        The results are equal.
-        Check for \(f(x)=x^{3}\):
-        \(\int _{-i}^{i}x^{3}dx=\frac{1}{4}x^{4}\Big|_{-i}^{i}=\frac{1}{4}(i^{4}-(-i)^{4})=\frac{1}{4}(1-1)=0\).
-        \(S_{2}=\frac{i-(-i)}{6}[(-i)^{3}+4(0)^{3}+(i)^{3}]=\frac{2i}{6}[i+0-i]=\frac{2i}{6}(0)=0\).
-        The results are equal.
-        Check for \(f(x)=x^{4}\):
-        \(\int _{-i}^{i}x^{4}dx=\frac{1}{5}x^{5}\Big|_{-i}^{i}=\frac{1}{5}(i^{5}-(-i)^{5})=\frac{1}{5}(i-(-i))=\frac{2}{5}i\).
-        \(S_{2}=\frac{i-(-i)}{6}[(-i)^{4}+4(0)^{4}+(i)^{4}]=\frac{2i}{6}[1+0+1]=\frac{2i}{6}(2)=\frac{2}{3}i\).
-        The results are not equal.
-        Since Simpson's rule \(S_{2}\) is exact for polynomials of degree up to \(3\), but not for degree \(4\), the degree of precision is \(3\).
+        We perform the computation directly using $h=\frac{b-a}{2}$:
+
+        \[\int_{a}^{b} 1 dx = b - a\]
+        and 
+        \[S_2 = \frac{h}{3}\left(1+4+1\right)=2h=2\frac{b-a}{2}=b-a=\int_{a}^{b} 1dx.\]
+        Next, we have
+        \[\int_{a}^{b} x \, dx\, = \frac{b^2-a^2}{2} = \frac{(b-a)(b+a)}{2}\]
+        and
+        \[S_2 = \frac{h}{3}\left(a+4\frac{a+b}{2}+b\right)=\frac{h}{3}\left(3a+3b\right)=\frac{(b-a)(b+a)}{2}=\int_{a}^{b}x \, dx\,.\]
+        Next, we have
+        \[\int_{a}^{b} x^2 \, dx\, = \frac{b^3-a^3}{3}=\frac{(b-a)(b^2+ba+a^2)}{3}\]
+        and 
+        \[S_2 = \frac{h}{3}\left(a^2+4\frac{{(a+b)}^2}{4}+b^2\right) = \frac{h}{3}(2a^2+2b^2+2ab)= \frac{(b-a)(b^2+ba+a^2)}{3} = \int_{a}^{b} x^2\, dx\,.\]
+        Finally, we have
+        \[\int_{a}^{b} x^3 \, dx\, = \frac{b^4-a^4}{4} = \frac{(b+a)(b-a)(b^2+a^2)}{4}\]
+        and
+        \[S_2 = \frac{h}{3}\left(a^3+\frac{{(a+b)}^3}{2}+b^3\right) = \frac{h}{3}\left(\frac{3}{2}a^3+\frac{3}{2}b^3+\frac{3}{2}a^2b+\frac{3}{2}ab^2\right)\]
+        \[=\frac{1}{4}(b-a)(b+a)(a^2+b^2)=\int_{a}^{b} x^3 \, dx\,.\]
+        Note however, that if we let $a=0$ and $b=1$, and we consider $f(x)=x^4$, we get
+        \[\int_{0}^{1} x^4\, dx\, = \frac{1}{5}\]
+        but
+        \[S_2= \frac{1}{6}\left(0+4\frac{1}{16}+1\right)=\frac{5}{24}\neq \frac{1}{5}.\]
+        Therefore, $S_2$ has degree of precision $3$.
+    
         %6b
         \item We must show that the error when integrating any polynomial of degree three or less using Simpson's rule is zero, while the error for a polynomial of degree four or higher is non-zero.
-        \(|E_{S}| = -\frac{(b-a)^{5}}{180}h^{4}f^{4}\)
-        Let f(x) = $x^3$. The fourth derivative of $f(x)$ is $f^{4}(x) = 0$. Substituting this into the error formula, we get $E = 0$, which means Simpson's rule will give the exact integral for any cubic polynomial.
-        Let f(x) = $x^4$. The fourth derivative of $f(x)$ is $f^{4}(x) = 24$. Substituting this into the error formula, we get $E \neq 0$, indicating that Simpson's rule will not give the exact integral for a quartic polynomial.
-        Thus, $S_n$ has degree of precision three.
+        \(|E_{n}(f)| = -\frac{(b-a)}{180}h^{4}f^{(4)}(\xi)\) for some $\xi\in[a,b]$. However, note that for any polynomial of degree less than or equal to $3$, we have $f^{(4)}(x)=0$. Therefore, $E_n(f)=0$. However, $E_n(f)\neq 0$ for $f(x)=x^4$ on $[1,2]$. Therefore, $S_n$ has degree of precision $3$.
+
         %6c
         \item To find the degree of precision of the approximation formula
         \(\int _{-1}^{1}f(x)dx\approx f(\frac{\sqrt{-3}}{3})+f(\frac{\sqrt{3}}{3})\),
