@@ -32,9 +32,30 @@
     \begin{enumerate}[leftmargin=!]
         %5a
         \item 
-
+        \begin{proof}
+            By the proposition, there exists $C, C_{\infty}\in \RR_{>0}$ such that
+            \[||x||\leq C_{\infty} ||x||_{\infty}\leq C_{\infty} C ||x||'\]
+            For all $x\in \RR^{n}$. Similarly, there exists $C',C'_{\infty}\in \RR_{>0}$ such that 
+            \[||x||' \leq C'_{\infty} ||x||_{\infty} \leq C'_{\infty} C' ||x||\]
+            For all $x\in \RR^n$. Therefore, letting $D=C_{\infty}C$ and $D'=  C'_{\infty} C'$ completes the proof.
+        \end{proof}
         %5b
         \item 
+        \begin{proposition}\label{prop:subaddsqrt}
+            Let $a,b\in \RR_{\geq 0}$. Then
+            \[\sqrt{a+b} \leq \sqrt{a}+\sqrt{b}.\]
+        \end{proposition}
+        \begin{proof}[Proof of Proposition~\ref{prop:subaddsqrt}]
+            Note that since $a$ and $b$ are non-negative, we have that
+            \[a+b \leq a+b+2\sqrt{a}\sqrt{b} = {(\sqrt{a}+\sqrt{b})}^2.\]
+            Taking the square root on both sides completes the proof.
+        \end{proof}
+
+        Note that by Proposition~\ref{prop:subaddsqrt}, we have the following for any $x\in \RR^2$:
+        \[||x||_{2}=\sqrt{x_1^2+x_2^2} \leq \sqrt{x_1^2}+\sqrt{x_2^2} = |x_1|+|x_2| = ||x||_{1}.\]
+        Furthermore, by the Cauchy-Schwarz-Bunyakovsky Inequality, we have that
+        \[||x||_{1} = |x_1|+|x_2| = 1\cdot |x_1|+1\cdot|x_2| \leq \sqrt{1+1}\sqrt{|x_1|^2+|x_2|^2} = \sqrt{2}||x||_{2}.\]
+        Therefore, $C_1=1$ and $C_2 = \sqrt{2}$ gives us the desired result.
     \end{enumerate}
 
     %Question 6
