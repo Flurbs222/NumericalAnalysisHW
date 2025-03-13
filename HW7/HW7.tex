@@ -1,6 +1,7 @@
 \documentclass[12pt]{article}
 \usepackage{Environments}
 \usepackage{Packages}
+\renewcommand{\qedsymbol}{\ensuremath{\blacksquare}}
 \title{}
 \author{Josh Morales}
 \date{\today}
@@ -13,24 +14,68 @@
 \textbf{\Large Homework 7} \\
 \text{Due date}: \today
 \end{center}
-\begin{enumerate}[leftmargin=2em]
+\begin{enumerate}[leftmargin=0em]
     %Question 1
     \item
+    Note that 
+    \[{||A||}_{\infty} = \max\{|3|+|2|+|4|,|2|+|0|+|2|, |4|+|2|+|3|\}= \max\{9,4,9\} = 9.\]
+    Furthermore, we have that
+    \[{||A||}_{1} = \max\{|3|+|2|+|4|, |2|+|0|+|2|, |4|+|2|+|3|\}= \max\{9,4,9\} = 9.\]
+    Finally, we compute the eigenvalues of $A$ in the following way.
+    \[\det(A-\lambda I)= 
+    \det
+    \begin{pmatrix}
+        3-\lambda & 2 & 4\\
+        2 & -\lambda & 2\\
+        4 & 2 & 3-\lambda
+    \end{pmatrix} = (3-\lambda)(-\lambda(3-\lambda)-4)-2(2(3-\lambda)-8)+4(4+4\lambda)\]
+    \[= -\lambda^3+6\lambda^2+15\lambda+8=-{(\lambda+1)}^2(\lambda-8).\]
+    Therefore, the eigenvalues are given by the roots of $-{(\lambda+1)}^2(\lambda-8)$, which are $\lambda=-1$ and $\lambda=8$. 
+    Since $A$ is symmetric, we have that
+    \[{||A||}_{2} = \rho(A) = \max\{|8|, |-1|\} = 8.\]
+
 
     %Question 2
     \item 
     \begin{enumerate}[leftmargin=!]
         %2a
         \item 
+        \begin{proof}
+            Let $M_1 = \max_{||x||\neq 0} \frac{||Ax||}{||x||}$ and $M_2 = ||A|| = \max_{||x|| = 1} ||Ax||$. It suffices to show that $M_1=M_2$. Note that if $||x||\neq 0$, then by properties of norms, we have
+            \[\frac{||Ax||}{||x||}= \left|\left|A\frac{x}{||x||}\right|\right|.\]
+            Furthermore\footnote{It should be noted that $\frac{x}{||x||}$ is intended to mean $\frac{1}{||x||}x$, to agree with multiplying x by a scalar.}, since $\left|\left|\frac{x}{||x||}\right|\right|= \frac{1}{||x||}||x|| = 1$
+            we must have that $M_1 \leq M_2$ by definition of $M_2$. Furthermore, if we fix an arbitrary vector, $x$, such that $||x||=1$. Then we must have
+            \[||Ax|| = \left|\left|A\frac{x}{1}\right|\right|=\left|\left|A\frac{x}{||x||}\right|\right|=\frac{||Ax||}{||x||}\]
+            by definition of $M_1$, we must have that $M_2\leq M_1$, and therefore, $M_1=M_2$, which was the desired result.
+        \end{proof}
         
         %2b
-        \item 
+        \item
+
+        \begin{proof}
+            Note that by part $(a)$, we have that for any vector $x\neq 0$,
+            \[||A|| = \max_{y\neq 0}\frac{||Ay||}{||y||} \geq \frac{||Ax||}{||x||}.\]
+            Multiplying by $||x||$ gives that $||Ax||\leq ||A||||x||$ for all $x\neq 0$. Furthermore, note that the inequality also holds when $x=0$, since $Ax=0$. Therefore,
+            \[||Ax||\leq ||A||||x||\]
+            for all $x$. We then have that
+            \[||AB|| = \max_{||x||=1||}||ABx||  \leq \max_{||x||=1}||A||||Bx||=||A||\max_{||x||=1}||Bx||= ||A||||B||\]
+            which is the desired result.
+        \end{proof}
         
         %2c
         \item 
+        \begin{proof}
+            By repetedly applying part $(b)$, we have that for all $k\in \NN$ 
+            \[||A^k||= ||A\cdot A^{k-1}||\leq ||A||||A^{k-1}|| =||A||||A\cdot A^{k-2}|| \leq {||A||}^2||A^{k-2}|| \leq \ldots ||A||^{k}.\]
+        \end{proof}
         
         %2d
         \item 
+        \begin{proof}
+            Note that by part $(b)$, we have
+            \[||A||||A^{-1}|| \geq ||AA^{-1}|| = ||I|| = \max_{||x||=1}||Ix|| = \max_{||x||=1}||x|| = 1\]
+            which is the desired result.
+        \end{proof}
     \end{enumerate}
 
     %Question 3
@@ -44,5 +89,40 @@
 
     %Question 6
     \item 
+    \begin{proof}
+        First, assume that $A$ is strictly diagonally dominant. Namely, suppose that
+        \[|a_{ii}| > \sum_{j\neq i}|a_{ij}|\]
+        for all $1\leq i \leq n$. Then, we must have that
+        \[{||D^{-1}(L+U)||}_{\infty} \leq {||D^{-1}||}_{\infty} {||L+U||}_{\infty} =  {||D^{-1}||}_{\infty}{||D-A||}_{\infty}\]
+        where we used the fact that $A=D-(L+U)$. Furthermore, since $D=\diag(a_{ii})$\footnote{I am going to make this assumption, since the theorem is not true without it. For example, if $A=I$, then clearly $A$ is strictly diagonally dominant. However, if we let $D=\frac{1}{2}I$, then we must have $L+U= D-A=-\frac{1}{2}I$. This may be achieved with $L=U=-\frac{1}{4}I$. However, this means ${||D^{-1}(L+U)||}_{\infty}= {||2I\left(-\frac{1}{2}I\right)||}_{\infty} = {||-I||}_{\infty} = 1$ which is obviously not less than $1$. I specify this because we only assumed that $D$ was diagonal, $L$ is lower triangular, and $U$ is upper triangular. However, what I have written is a stronger condition.}, we must have that
+        \[D^{-1} = \diag\left(\frac{1}{a_{ii}}\right).\]
+        Therefore, since we have that
+        \[L+U =
+        \begin{cases}
+            a_{ij} & \text{ if } i\neq j\\
+            0 & \text{else}    
+        \end{cases},\]
+        we must have
+        \[{[D^{-1}(L+U)]}_{ij} = 
+        \begin{cases}
+            \frac{a_{ij}}{a_{ii}} & \text{ if  } i\neq j\\
+            0 & \text{else}
+        \end{cases}.\]
+        Therefore, we have that
+        \[{||D^{-1}(L+U)||}_{\infty} = \max_{1\leq i \leq n}\sum_{j=1}^{n}\left|{[D^{-1}(L+U)]}_{ij}\right| = \max_{1\leq i \leq n}\sum_{j\neq i} \left|\frac{a_{ij}}{a_{ii}}\right|= \max_{1\leq i\leq n}\frac{1}{|a_{ii}|}\sum_{j\neq i}|a_{ij}|.\]
+        Since $A$ is strictly diagonally dominant, we have that
+        \[{||D^{-1}(L+U)||}_{\infty}= \max_{1\leq i\leq n}\frac{1}{|a_{ii}|}\sum_{j\neq i}|a_{ij}| < \max_{1\leq i \leq n}\frac{|a_{ii}|}{|a_{ii}|} = 1.\]
+        Therefore, ${||D^{-1}(L+U)||}_{\infty}<1$.
+
+        \bigskip 
+
+        \noindent Suppose that ${||D^{-1}(L+U)||}_{\infty}<1$. As discussed before, we have that
+        \[{||D^{-1}(L+U)||}_{\infty}= \max_{1\leq i\leq n}\frac{1}{|a_{ii}|}\sum_{j\neq i}|a_{ij}|.\]
+        Therefore, for all $1\leq i \leq n$, we have that
+        \[\frac{1}{|a_{ii}|}\sum_{j\neq i}|a_{ij}|\leq \max_{1\leq i\leq n}\frac{1}{|a_{ii}|}\sum_{j\neq i}|a_{ij}|<1.\]
+        Thus, multiplying by $a_{ii}$ gives that for all $1\leq i\leq n$,
+        \[\sum_{j\neq i}|a_{ij}|<||a_{ii}||.\]
+        Therefore, $A$ is strictly diagonally dominant, which completes the proof.
+    \end{proof}
 \end{enumerate}
 \end{document}
