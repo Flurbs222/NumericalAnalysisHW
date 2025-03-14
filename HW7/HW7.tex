@@ -218,6 +218,25 @@
 
     %Question 5
     \item 
+    Let $T=I_{2\times 2}$, the $2\times 2$ identity matrix. Clearly, we have that
+    \[{||T||}_{\infty} = \max\{1,1\} = 1.\]
+    Furthermore, if we let \[\mathbf{c} = 
+    \begin{pmatrix}
+        1\\
+        1
+    \end{pmatrix},\]
+    then starting with the initial condition $\mathbf{x}^{(0)} = \mathbf{0}$ gives 
+    \[\mathbf{x}^{(k+1)}= I\mathbf{x}^{(k)}+\mathbf{c} = \mathbf{x}^{(k)}+\mathbf{c}.\]
+    Therefore, we have
+    \[\mathbf{x}^{(k)}= \mathbf{x}^{(k-1)}+\mathbf{c} = \mathbf{x}^{(k-2)}+2\mathbf{c} = \cdots = \mathbf{x}^{(0)}+k\mathbf{c} = k\mathbf{c}= 
+    \begin{pmatrix}
+        k\\
+        k
+    \end{pmatrix}.\]
+    Therefore it suffices to show that ${||k\mathbf{c}||}_{\infty} \xrightarrow{k\to \infty} \infty$. Clearly, we have that
+    \[{||k\mathbf{c}||}_{\infty} = \max\{|k|,|k|\} = k \rightarrow \infty\]
+    as $k\rightarrow \infty$. Therefore, we are done.
+
 
     %Question 6
     \item 
