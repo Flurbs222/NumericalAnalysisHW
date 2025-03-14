@@ -81,7 +81,56 @@
 
     %Question 3
     \item 
-
+    \begin{proof}
+	    
+	\textbf{Step 1.} $\|A\|_1 \leq \max\limits_{1 \leq j \leq n} \sum\limits_{i=1}^{n} |a_{ij}|.$
+	
+	Fix $\mathbf{x}$ with $\|\mathbf{x}\|_1 = 1$. \quad ($\Rightarrow \sum\limits_{j=1}^{n} |x_j| = 1$)
+	
+	\begin{align*}
+		\|A\mathbf{x}\|_1 & = \sum\limits_{i=1}^{n} \left| \sum\limits_{j=1}^{n} a_{ij} x_j \right| \\
+		                  & \leq \sum\limits_{i=1}^{n} \sum\limits_{j=1}^{n} |a_{ij} x_j|           \\
+		                  & \leq \sum\limits_{j=1}^{n} |x_j| \sum\limits_{i=1}^{n} |a_{ij}|         \\
+		                  & \leq \max\limits_{1 \leq j \leq n} \sum\limits_{i=1}^{n} |a_{ij}|.      
+	\end{align*}
+	
+	Taking the maximum over all $\mathbf{x}$ with $\|\mathbf{x}\|_1 = 1$, we get:
+	\[
+		\|A\|_1 = \max_{\|\mathbf{x}\|_1=1} \|A\mathbf{x}\|_1 \leq \max_{1 \leq j \leq n} \sum_{i=1}^{n} |a_{ij}|.
+	\]
+	
+	\textbf{Step 2.} $\|A\|_1 \geq \max\limits_{1 \leq j \leq n} \sum\limits_{i=1}^{n} |a_{ij}|.$
+	
+	There exists some $p$ such that:
+	\[
+		\sum\limits_{i=1}^{n} |a_{ip}| = \max\limits_{1 \leq j \leq n} \sum\limits_{i=1}^{n} |a_{ij}|.
+	\]
+	
+	Define $\mathbf{x} = [x_j]$ as:
+	\[
+		x_j = \begin{cases} 1 & j = p, \\ 0 & \text{else}
+		\end{cases}\]
+		
+		($\|\mathbf{x}\|_1 = 1.$ and $a_{ij} x_j = |a_{ip}|$.)
+		
+		\begin{align*}
+			\|A\mathbf{x}\|_1 & = \sum\limits_{i=1}^{n} \left| \sum\limits_{j=1}^{n} a_{ij} x_j \right| \\
+			                  & = \sum\limits_{i=1}^{n} |a_{ip}|                                        \\
+			                  & = \max\limits_{1 \leq j \leq n} \sum\limits_{i=1}^{n} |a_{ij}|.         
+		\end{align*}
+		
+		Thus,
+		\[
+			\|A\|_1 = \max_{\|\mathbf{x}\|_1=1} \|A\mathbf{x}\|_1 \geq \max_{1 \leq j \leq n} \sum_{i=1}^{n} |a_{ij}|.
+		\]
+		
+		Since both inequalities hold, we conclude:
+		\[
+			\|A\|_1 = \max\limits_{1 \leq j \leq n} \sum\limits_{i=1}^{n} |a_{ij}|.
+		\]
+		    
+	\end{proof}
+ 
     %Question 4
     \item 
     For the Gauss-Seidel method, we get the following after each iteration:
