@@ -24,7 +24,7 @@
   \item
   \begin{enumerate}[leftmargin=!]
     %1a
-    \item`
+    \item
 
     %1b
     \item
@@ -41,18 +41,39 @@
   
   %Problem 4
   \item
+  We are given that $\mathbf{v} = \begin{pmatrix}
+    1\\
+    2\\
+    3\\
+    0
+  \end{pmatrix}$ and
+  $\mathbf{w} = \begin{pmatrix}
+    1\\
+    -1\\
+    2\\
+    -2
+  \end{pmatrix}$.
   \begin{enumerate}[leftmargin=!]
     %4a
-    \item
+    \item $\langle \mathbf{v} , \mathbf{w} \rangle = 1 * 1 + 3 * (-1) + 2 * 2 + 0 * (-2) = 2$
 
     %4b
-    \item
+    \item $||\mathbf{v}|| = \sqrt{1^{2} + 3^{2} + 2^{2}} = \sqrt{14}$
 
     %4c
-    \item
+    \item $\mathbf{v} - \mathbf{w} = \begin{pmatrix}
+      0 \\
+      4 \\
+      0 \\
+      2
+    \end{pmatrix}$
+
+    $||\mathbf{v} - \mathbf{w}|| = \sqrt{0^{2} + 4^{2} + 0^{2} + 2^{2}} = 2\sqrt{5}$
 
     %4d
-    \item
+    \item $\cos(\theta) = \frac{\langle \mathbf{v}, \mathbf{w} \rangle}{||\mathbf{v}||\cdot||\mathbf{w}||} = \frac{2}{\sqrt{14} \cdot \sqrt{1^{2} + (-1)^{2} + 2^{2} + (-2)^{2}}} = \frac{2}{\sqrt{140}}$ 
+    
+    $\theta = \cos^{-1}(\frac{2}{\sqrt{140}}) \approx 1.40095$
   \end{enumerate}
 
 
@@ -74,12 +95,34 @@
 
   %Problem 6
   \item
+  We know that $\mathbf{v_1} = (1, 2, 2), \mathbf{v_2} = (-1, 0, 2)$, and $\mathbf{v_3} = (0,0,1)$
+
   \begin{enumerate}[leftmargin=!]
     %6a
     \item
+    \[ \mathbf{v_1} = \mathbf{x_1} \text{ and } ||\mathbf{x_1}||_{2} = \sqrt{1^2+2^2+2^2}\]
+    \[ ||\mathbf{w}|| = \frac{\mathbf{x_1}}{||\mathbf{x_1}||_2} = (\frac{1}{3}, \frac{2}{3}, \frac{2}{3}) \]
+    \[ \mathbf{x_2} = \mathbf{v_2} - \langle \mathbf{v_2}, \mathbf{w_1} \rangle \mathbf{w_1} = (-1, 0, 2) - \langle (-1, 0, 2) , (\frac{1}{3}, \frac{2}{3}, \frac{2}{3}) \rangle\]
+    \[ = (-1, 0, 2) - 1(\frac{1}{3}, \frac{2}{3}, \frac{2}{3})\]
+    \[ = (\frac{-4}{3}, \frac{-2}{3}, \frac{4}{3})\]   
+    \[||\mathbf{x^2}||_2 = \sqrt{(\frac{-4}{3})^{2} + (\frac{-2}{3})^{2} + (\frac{4}{3})^{2}} = 2\] 
+    \[ \mathbf{w_2} = \frac{\mathbf{x_2}}{||\mathbf{x_2}||_2} = (\frac{-2}{3}, \frac{-1}{3}, \frac{2}{3})\]
+    \[ \mathbf{x_3} = \mathbf{v_3} - \langle \mathbf{v_3}, \mathbf{w_1} \rangle \mathbf{w_1} - \langle \mathbf{v_3}, \mathbf{w_2} \rangle \mathbf{w_2}\]
+    \[ \mathbf{x_3} = (0, 0, 1) - \langle (0, 0, 1), (\frac{1}{3}, \frac{2}{3}, \frac{2}{3})\rangle (\frac{1}{3}, \frac{2}{3}, \frac{2}{3}) - \langle (0,0,1) (\frac{-2}{3}, \frac{-1}{3}, \frac{2}{3}) \rangle (\frac{-2}{3}, \frac{-1}{3}, \frac{2}{3})\]
+    \[ = (0,0,1) - \frac{2}{3}(\frac{1}{3}, \frac{2}{3}, \frac{2}{3}) - \frac{2}{3}(\frac{-2}{3}, \frac{-1}{3}, \frac{2}{3})\]
+    \[ = (\frac{2}{9}, \frac{-2}{9}, \frac{1}{9})\]
+    \[ || \mathbf{x_3} ||_2 = \frac{1}{3} \]
+    \[ \mathbf{w_3} = \frac{\mathbf{x_3}}{||\mathbf{x_3}||_2} = (\frac{2}{3}, \frac{-2}{3}, \frac{1}{3})\]
 
     %6b
     \item
+    We know $\mathbf{x} = (7, 5, 1)$
+    \[ \langle (7, 5, 1), (\frac{1}{3}, \frac{2}{3}, \frac{2}{3}) \rangle = \frac{19}{3}\]
+    \[ \langle (7, 5, 1), (\frac{-2}{3}, \frac{-1}{3}, \frac{2}{3}) \rangle = \frac{-17}{3}\]
+    \[ \langle (7, 5, 1), (\frac{2}{3}, \frac{-2}{3}, \frac{1}{3}) \rangle = \frac{5}{3}\].
+
+    Now, we can write 
+    \[ \frac{19}{3}(\frac{1}{3}, \frac{2}{3}, \frac{2}{3}) - \frac{17}{3}(\frac{-2}{3}, \frac{-1}{3}, \frac{2}{3}) + \frac{5}{3}(\frac{2}{3}, \frac{-2}{3}, \frac{1}{3})\]
   \end{enumerate}
 \end{enumerate}
 \end{document}
