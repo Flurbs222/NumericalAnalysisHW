@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.4)  2 APR 2025 15:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.4)  2 APR 2025 16:05
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1055,7 +1055,11 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 ) [1{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
-] [2] (./HW8.aux)
+] [2]
+pdfTeX warning (font expansion): font should be expanded before its first use
+
+pdfTeX warning (font expansion): font should be expanded before its first use
+[3] (./HW8.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -1064,18 +1068,18 @@ Package rerunfilecheck Info: File `HW8.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 36625 strings out of 474116
- 691662 string characters out of 5743683
- 1952187 words of memory out of 5000000
+ 36628 strings out of 474116
+ 691684 string characters out of 5743683
+ 1947187 words of memory out of 5000000
  58347 multiletter control sequences out of 15000+600000
- 566186 words of font info for 81 fonts, out of 8000000 for 9000
+ 566235 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  116i,12n,121p,3261b,796s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on HW8.pdf (2 pages, 101591 bytes).
+Output written on HW8.pdf (3 pages, 111325 bytes).
 PDF statistics:
- 93 PDF objects out of 1000 (max. 8388607)
- 68 compressed objects within 1 object stream
- 22 named destinations out of 1000 (max. 500000)
+ 97 PDF objects out of 1000 (max. 8388607)
+ 71 compressed objects within 1 object stream
+ 23 named destinations out of 1000 (max. 500000)
  14349 words of extra memory for PDF output out of 14400 (max. 10000000)
 
