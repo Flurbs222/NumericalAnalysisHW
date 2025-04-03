@@ -38,6 +38,19 @@
   
   %Problem 3
   \item
+  \begin{proof}
+    First, note that since $x^2\geq 0$ for all $x\in \RR$ and $f\in C[a,b]$, we have that
+    \[\langle f,f \rangle= \int_{a}^{b}f(x)^2\, dx\, \geq 0.\]
+    Furthermore, we have that
+    \[\langle f, f\rangle = 0 \iff \int_{a}^{b}f(x)^2\, dx\, = 0 \iff f(x)^2 = 0 \iff f(x) = 0\]
+    for all $x\in [a,b]$. This is also due to the non-negativity of $f(x)^2$. Next, for any $f,g\in C[a,b]$ we have that
+    \[\langle f, g \rangle = \int_{a}^{b} f(x)g(x)\, dx\, = \int_{a}^{b} g(x)f(x)\, dx\, = \langle g, f \rangle.\]
+
+    \noindent Finally, for any $f,g,h \in C[a,b]$ and $c_{1},c_{2}\in \RR$, by the linearity of the Riemann integral, we have that
+    \[\langle c_{1}f(x)+c_{2}g(x), h(x)\rangle = \int_{a}^{b} (c_{1}f(x)+c_{2}g(x))h(x)\, dx\, = \int_{a}^{b} (c_{1}f(x)h(x)+c_{2}g(x)h(x))\, dx\,\] 
+    \[= c_{1}\int_{a}^{b} f(x)h(x)\, dx\, +c_{2}\int_{a}^{b} g(x)h(x)\, dx\, = c_{1}\langle f,h\rangle+c_{2} \langle g , h\rangle.\]
+    Therefore, $\langle \cdot, \cdot \rangle$ is an inner product, which is the desired result. 
+  \end{proof}
   
   %Problem 4
   \item
