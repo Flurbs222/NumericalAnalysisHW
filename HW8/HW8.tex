@@ -35,6 +35,69 @@
 
   %Problem 2
   \item
+  We are given the data points:
+  \((1, 2.31), (2, 2.01), (3, 1.80), (4, 1.66), (5, 1.55), (6, 1.47), (7, 1.41)\)
+  We seek a quadratic function of the form:
+  \(f(x) = a + bx + cx^2\)
+  The normal equations are as such:
+  \begin{align}
+  \sum y &= a n + b \sum x + c \sum x^2, \\
+  \sum xy &= a \sum x + b \sum x^2 + c \sum x^3, \\
+  \sum x^2 y &= a \sum x^2 + b \sum x^3 + c \sum x^4.
+  \end{align}
+  
+  The values of $x$, $y$, and the required powers of $x$ are:
+  \begin{center}
+  \begin{tabular}{c|c|c|c|c|c|c}
+  $x$ & $y$ & $x^2$ & $x^3$ & $x^4$ & $xy$ & $x^2y$ \\
+  \hline
+  1 & 2.31 & 1 & 1 & 1 & 2.31 & 2.31 \\
+  2 & 2.01 & 4 & 8 & 16 & 4.02 & 8.04 \\
+  3 & 1.80 & 9 & 27 & 81 & 5.40 & 16.20 \\
+  4 & 1.66 & 16 & 64 & 256 & 6.64 & 26.56 \\
+  5 & 1.55 & 25 & 125 & 625 & 7.75 & 38.75 \\
+  6 & 1.47 & 36 & 216 & 1296 & 8.82 & 52.92 \\
+  7 & 1.41 & 49 & 343 & 2401 & 9.87 & 69.03 \\
+  \hline
+  $\sum$ &  & 140 & 784 & 4676 & 44.81 & 213.81 \\
+  \end{tabular}
+  \end{center}
+
+  The computed sums are:
+  \begin{align}
+  \sum x &= 28, & \sum x^2 &= 140, & \sum x^3 &= 784, & \sum x^4 &= 4676, \\
+  \sum y &= 12.21, & \sum xy &= 44.81, & \sum x^2y &= 213.81.
+  \end{align}
+
+  Substituting the computed sums into the normal equations:
+  \begin{align}
+  12.21 &= 7a + 28b + 140c, \\
+  44.81 &= 28a + 140b + 784c, \\
+  213.81 &= 140a + 784b + 4676c.
+  \end{align}
+
+  We solve using Gaussian elimination:
+  \begin{equation}
+  \begin{bmatrix}
+  7 & 28 & 140 \\
+  28 & 140 & 784 \\
+  140 & 784 & 4676
+  \end{bmatrix}
+  \begin{bmatrix} a \\ b \\ c \end{bmatrix} \(=\) 
+  \begin{bmatrix} 12.21 \\ 44.81 \\ 213.81 \end{bmatrix}.
+  \end{equation}
+
+  Solving this system gives:
+  \begin{align}
+  a &\approx 2.5929, \\
+  b &\approx -0.3258, \\
+  c &\approx 0.0227.
+  \end{align}
+
+  Thus, the quadratic least squares approximation is:
+  \(f(x) = 2.5929 - 0.3258x + 0.0227x^2.\)
+
+  \end{enumerate}
   
   %Problem 3
   \item
