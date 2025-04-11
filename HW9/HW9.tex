@@ -138,10 +138,18 @@
     \begin{enumerate}[leftmargin=!]
         %5a
         \item 
+        Note that since $\det(P^{-1}) = \det(P)^{-1}$, we have that
+        \[\det(B) = \det(P^{-1}AP) = \det(P^{-1})\det(A)\det(P) = \det(A)\det(P)\det(P)^{-1} = \det(A).\]
         %5b
         \item 
+        It suffices to show that $A$ and $B$ have the same characteristic polynomial. Indeed, we have that 
+        \[\det(B-\lambda I) = \det(P^{-1}AP -\lambda P^{-1}P) = \det(P^{-1}AP - P^{-1}(\lambda P)) = \det(P^{-1}(A-\lambda I)P) = \det(A-\lambda I).\]
         %5c
-        \item 
+        \item
+        Since $A$ is invertible, then $\det(B) = \det(A) \neq 0$. Therefore, $B$ is also invertible. Furthermore, we have that
+        \[B^{-1} = {(P^{-1}AP)}^{-1} = P^{-1} A^{-1} {(P^{-1})}^{-1} = P^{-1} A^{-1} P.\]
+        Therefore, $A^{-1}$ and $B^{-1}$ are similar, which is the desired result.
+
     \end{enumerate}
 
     %Problem 6
