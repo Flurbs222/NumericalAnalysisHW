@@ -21,7 +21,50 @@
 
 \begin{enumerate}[leftmargin=0em]
     %Problem 1
-    \item 
+    \item
+    Since $\{w_1,w_2,\dots,w_k\}$ is an orthonormal basis for $W$, we can represent $w$ using
+    $a = \begin{bmatrix}
+           a_1 \\
+           a_2 \\
+           \vdots \\
+           a_k
+         \end{bmatrix}
+         \in \mathbb{R}^k$.
+
+    \[
+    w = a_1w_1+\dots + a_kw_k = Aa
+    \]
+    $w$ is the orthogonal projection of $v$ onto $W$ $\iff$ $v-w$ is orthogonal to all vectors in $W$. Specifically it must be orthogonal to each basis vector, meaning for every $j=1,2,\dots,k$ 
+    \[ 
+    \langle v-w \; , \; w_j \rangle = 0 
+    \]
+    Since the matrix $A$ has the basis vectors as columns, we can say that 
+    \[
+    A^T(v-w)_j = \langle w_j \; , \; v-w \rangle
+    \]
+    And since all inner products are zero, this is equivalent to
+    \[
+    A^T(v-w)=0
+    \]
+    Using our previous representation of $w$, this can be rewritten as
+    \[
+    A^T(v-Aa) = 0
+    \]
+    \[
+    = A^Tv-A^TAa = 0
+    \]
+    And because the columns of $A$ form an orthonormal set, $A^TA=I_k$, we get
+    \[
+    A^Tv-I_ka =A^Tv-a = 0
+    \]
+    \[
+    a = A^Tv
+    \]
+    So going back to the previous representation of $w$,
+    \[
+    w = Aa = A(A^Tv) = AA^Tv
+    \]
+    Thus this vector $w$ is the closest approximation of $v$.
 
     %Problem 2
     \item 
