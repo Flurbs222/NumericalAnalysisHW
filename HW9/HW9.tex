@@ -21,53 +21,45 @@
 
 \begin{enumerate}[leftmargin=0em]
     %Problem 1
-    \item
-    Since $\{w_1,w_2,\dots,w_k\}$ is an orthonormal basis for $W$, we can represent $w$ using
-    $a = \begin{bmatrix}
-           a_1 \\
-           a_2 \\
-           \vdots \\
-           a_k
-         \end{bmatrix}
-         \in \mathbb{R}^k$.
-
-    \[
-    w = a_1w_1+\dots + a_kw_k = Aa
-    \]
-    $w$ is the orthogonal projection of $v$ onto $W$ $\iff$ $v-w$ is orthogonal to all vectors in $W$. Specifically it must be orthogonal to each basis vector, meaning for every $j=1,2,\dots,k$ 
-    \[ 
-    \langle v-w \; , \; w_j \rangle = 0 
-    \]
-    Since the matrix $A$ has the basis vectors as columns, we can say that 
-    \[
-    A^T(v-w)_j = \langle w_j \; , \; v-w \rangle
-    \]
-    And since all inner products are zero, this is equivalent to
-    \[
-    A^T(v-w)=0
-    \]
-    Using our previous representation of $w$, this can be rewritten as
-    \[
-    A^T(v-Aa) = 0
-    \]
-    \[
-    = A^Tv-A^TAa = 0
-    \]
-    And because the columns of $A$ form an orthonormal set, $A^TA=I_k$, we get
-    \[
-    A^Tv-I_ka =A^Tv-a = 0
-    \]
-    \[
-    a = A^Tv
-    \]
-    So going back to the previous representation of $w$,
-    \[
-    w = Aa = A(A^Tv) = AA^Tv
-    \]
-    Thus this vector $w$ is the closest approximation of $v$.
+    \item 
 
     %Problem 2
-    \item 
+    \item  
+    First we note that for all $0\leq k \leq n$, we have that 
+    \[\left\langle \frac{1}{\sqrt{2}},\cos(kx)\right\rangle=\frac{1}{\pi}\int_{-\pi}^{\pi}\frac{1}{\sqrt{2}} \cos(kx)\, dx\, = \frac{1}{\pi}\left[\frac{\sin(kx)}{k}\right]\bigg\rvert_{-\pi}^{\pi}=0\]
+    where we used the fact that $\sin(k\pi) =0$ for all integers $k$.
+
+    \smallskip
+
+
+    \noindent Furthermore, note that
+    \[\left\langle \frac{1}{\sqrt{2}},\sin(kx)\right\rangle=\frac{1}{\pi}\int_{-\pi}^{\pi}\frac{1}{\sqrt{2}} \sin(kx)\, dx\, = 0\]
+    since $\sin(kx)$ is an odd function for all integers $k$. 
+    
+    \smallskip
+
+    \noindent Next, note that 
+    \[\left\langle \frac{1}{\sqrt{2}},\frac{1}{\sqrt{2}}\right\rangle=\frac{1}{\pi}\int_{-\pi}^{\pi}\frac{1}{2}\, dx\, = \frac{1}{\pi}\frac{2\pi}{2} =1.\]
+
+    \bigskip
+
+    \noindent Now for all positive integers $m$ and $n$, we first note that $\cos(mx)\sin(nx)$ is an odd function, so they will have an inner product of $0$. Considering $\cos(nx)$ and $\cos(mx)$, we have two cases. If $n=m$, we have that
+    \[\left\langle \cos(mx), \cos(mx) \right\rangle=\frac{1}{\pi}\int_{-\pi}^{\pi}\cos^2(mx)\, dx\, = \frac{1}{\pi}\int_{0}^{\pi}\left(1+\cos(2mx)\right)\, dx\, =\frac{1}{\pi}\left(x+\frac{1}{2m}\sin(2mx)\right)\bigg\rvert_{0}^{\pi}\]
+    \[=\frac{1}{\pi}\pi = 1.\]
+    If $n\neq m$, then we have
+    \[\left\langle \cos(nx), \cos(mx) \right\rangle=\frac{2}{\pi}\int_{0}^{\pi}\cos(nx)\cos(mx)\, dx\, = \frac{1}{\pi}\int_{0}^{\pi} \left(\cos((n-m)x)+\cos((n+m)x)\right)\, dx\,\]
+    \[=\frac{1}{\pi}\left(\frac{1}{n-m}\sin((n-m)x)+\frac{1}{n+m}\sin((n+m)x)\right)\bigg\rvert_{0}^{\pi} = 0 \]
+    where we once again used that $\sin(k\pi)=0$. 
+
+    \smallskip
+
+    \noindent We finally consider $\sin(nx)$ and $\sin(mx)$, which once again has two cases. If $n=m$, then
+    \[\left\langle \sin(mx), \sin(mx) \right\rangle=\frac{2}{\pi}\int_{0}^{\pi}\sin^2(mx)\, dx\, = \frac{1}{\pi}\int_{0}^{\pi}\left(1-\cos(2mx)\right)\, dx\, =\frac{1}{\pi}\left(x-\frac{1}{2m}\sin(2mx)\right)\bigg\rvert_{0}^{\pi}\]
+    \[=\frac{1}{\pi}\pi = 1.\]
+    If $n\neq m$, then we have
+    \[\left\langle \sin(nx), \sin(mx) \right\rangle=\frac{2}{\pi}\int_{0}^{\pi}\sin(nx)\sin(mx)\, dx\, = \frac{1}{\pi}\int_{0}^{\pi} \left(\cos((n-m)x)-\cos((n+m)x)\right)\, dx\,\]
+    \[=\frac{1}{\pi}\left(\frac{1}{n-m}\sin((n-m)x)-\frac{1}{n+m}\sin((n+m)x)\right)\bigg\rvert_{0}^{\pi} = 0 \]
+    by the same reasons as above. Therefore, the set is an orthonormal set, which is the desired result. 
 
     %Problem 3
     \item

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.2.23)  10 APR 2025 19:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.2.23)  10 APR 2025 23:07
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1025,8 +1025,23 @@ Package microtype Info: No adjustment of character kerning.
  (C:\Users\video\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
-Overfull \hbox (104.64171pt too wide) detected at line 58
-\OML/cmm/m/it/12 S[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 ^^Y \OT1/cmr/m/n/12 3\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 6767 \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 3\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 6767 [](\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) + 3\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 6767 [](\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) + 1\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 4707 [](2\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 9414 [](2\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 7353 [](3\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) + 2\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 2060 [](3\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )
+Overfull \hbox (27.76749pt too wide) detected at line 47
+[] \OT1/cmr/m/n/12 = [] [][] [][](\OML/cmm/m/it/12 mx\OT1/cmr/m/n/12 ) \OML/cmm/m/it/12 dx  \OT1/cmr/m/n/12 = [] [][] []  \OML/cmm/m/it/12 dx  \OT1/cmr/m/n/12 = [] [] [][]
+ []
+
+
+Overfull \hbox (5.8241pt too wide) detected at line 50
+[] \OT1/cmr/m/n/12 = [] [][] [](\OML/cmm/m/it/12 nx\OT1/cmr/m/n/12 ) [](\OML/cmm/m/it/12 mx\OT1/cmr/m/n/12 ) \OML/cmm/m/it/12 dx  \OT1/cmr/m/n/12 = [] [][] []  \OML/cmm/m/it/12 dx 
+ []
+
+
+Overfull \hbox (22.96213pt too wide) detected at line 57
+[] \OT1/cmr/m/n/12 = [] [][] [][](\OML/cmm/m/it/12 mx\OT1/cmr/m/n/12 ) \OML/cmm/m/it/12 dx  \OT1/cmr/m/n/12 = [] [][] []  \OML/cmm/m/it/12 dx  \OT1/cmr/m/n/12 = [] [] [][]
+ []
+
+
+Overfull \hbox (0.7965pt too wide) detected at line 60
+[] \OT1/cmr/m/n/12 = [] [][] [](\OML/cmm/m/it/12 nx\OT1/cmr/m/n/12 ) [](\OML/cmm/m/it/12 mx\OT1/cmr/m/n/12 ) \OML/cmm/m/it/12 dx  \OT1/cmr/m/n/12 = [] [][] []  \OML/cmm/m/it/12 dx 
  []
 
 
@@ -1034,20 +1049,20 @@ Overfull \hbox (104.64171pt too wide) detected at line 58
 [1{C:/Users/video/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
 ]
-Overfull \hbox (112.94937pt too wide) detected at line 78
+
+[2]
+Overfull \hbox (104.64171pt too wide) detected at line 93
+\OML/cmm/m/it/12 S[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 ^^Y \OT1/cmr/m/n/12 3\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 6767 \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 3\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 6767 [](\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) + 3\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 6767 [](\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) + 1\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 4707 [](2\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 9414 [](2\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 7353 [](3\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) + 2\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 2060 [](3\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )
+ []
+
+
+Overfull \hbox (112.94937pt too wide) detected at line 113
 \OML/cmm/m/it/12 S[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) = []\OMS/cmsy/m/n/12 h\OML/cmm/m/it/12 y; ^^^[]\OMS/cmsy/m/n/12 i \OT1/cmr/m/n/12 + \OMS/cmsy/m/n/12 h\OML/cmm/m/it/12 y; ^^^[]\OMS/cmsy/m/n/12 i []\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) + \OMS/cmsy/m/n/12 h\OML/cmm/m/it/12 y; ^^^[]\OMS/cmsy/m/n/12 i []\OT1/cmr/m/n/12 (2\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) + \OMS/cmsy/m/n/12 h\OML/cmm/m/it/12 y; ^^^[]\OMS/cmsy/m/n/12 i []\OT1/cmr/m/n/12 (3\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) + \OMS/cmsy/m/n/12 h\OML/cmm/m/it/12 y;  []\OMS/cmsy/m/n/12 i []\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) + \OMS/cmsy/m/n/12 h\OML/cmm/m/it/12 y;  []\OMS/cmsy/m/n/12 i []\OT1/cmr/m/n/12 (2\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) + \OMS/cmsy/m/n/12 h\OML/cmm/m/it/12 y;  []\OMS/cmsy/m/n/12 i []\OT1/cmr/m/n/12 (3\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )
  []
 
 
-Overfull \hbox (63.51714pt too wide) detected at line 80
+Overfull \hbox (63.51714pt too wide) detected at line 115
 \OML/cmm/m/it/12 S[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 ^^Y \OT1/cmr/m/n/12 3\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 676 + 2\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 963 [](\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) + 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 946 [](2\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) + 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 164 [](3\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 263 [](\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 740 [](2\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 214 [](3\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )
- []
-
-
-
-[2]
-Overfull \hbox (48.99913pt too wide) detected at line 170
-\OT1/cmr/m/n/12 (1 \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 ^^U\OT1/cmr/m/n/12 ) [] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1) [] + 2 [] = \OMS/cmsy/m/n/12 ^^@\OML/cmm/m/it/12 ^^U[] \OT1/cmr/m/n/12 + 4\OML/cmm/m/it/12 ^^U[] \OT1/cmr/m/n/12 + 4\OML/cmm/m/it/12 ^^U \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 16 = \OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^U \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 4)(\OML/cmm/m/it/12 ^^U \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 2)(\OML/cmm/m/it/12 ^^U \OT1/cmr/m/n/12 + 2)
  []
 
 
@@ -1055,7 +1070,14 @@ Overfull \hbox (48.99913pt too wide) detected at line 170
 [3]
 
 [4]
-runsystem(latexminted cleantemp  --timestamp 20250410193554 9DD9DB49B53C1044A5A7BF4488D58A57)...executed.
+Overfull \hbox (48.99913pt too wide) detected at line 205
+\OT1/cmr/m/n/12 (1 \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 ^^U\OT1/cmr/m/n/12 ) [] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1) [] + 2 [] = \OMS/cmsy/m/n/12 ^^@\OML/cmm/m/it/12 ^^U[] \OT1/cmr/m/n/12 + 4\OML/cmm/m/it/12 ^^U[] \OT1/cmr/m/n/12 + 4\OML/cmm/m/it/12 ^^U \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 16 = \OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^U \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 4)(\OML/cmm/m/it/12 ^^U \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 2)(\OML/cmm/m/it/12 ^^U \OT1/cmr/m/n/12 + 2)
+ []
+
+
+
+[5]
+runsystem(latexminted cleantemp  --timestamp 20250410230748 9DD9DB49B53C1044A5A7BF4488D58A57)...executed.
 
  (HW9.aux)
  ***********
@@ -1066,17 +1088,17 @@ Package rerunfilecheck Info: File `HW9.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 37543 strings out of 473899
- 740856 string characters out of 5726500
- 1949960 words of memory out of 5000000
+ 37546 strings out of 473899
+ 740876 string characters out of 5726500
+ 1952960 words of memory out of 5000000
  59807 multiletter control sequences out of 15000+600000
- 565160 words of font info for 72 fonts, out of 8000000 for 9000
+ 565209 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 131i,12n,135p,3346b,805s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 131i,12n,135p,3346b,838s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/video/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/video/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/video/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/video/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/video/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/video/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/video/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/video/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on HW9.pdf (4 pages, 107100 bytes).
+Output written on HW9.pdf (5 pages, 113014 bytes).
 PDF statistics:
- 82 PDF objects out of 1000 (max. 8388607)
- 18 named destinations out of 1000 (max. 500000)
+ 87 PDF objects out of 1000 (max. 8388607)
+ 19 named destinations out of 1000 (max. 500000)
  6157 words of extra memory for PDF output out of 10000 (max. 10000000)
 
