@@ -1,0 +1,81 @@
+\documentclass[12pt]{article}
+\usepackage{Environments}
+\usepackage{Packages}
+
+\title{Numerical Analysis HW9}
+\author{Coyne, Dedvukaj, Gao, Karabushin, Lin, Morales}
+\date{\today}
+
+\setlength{\headheight}{15pt}
+
+\begin{document}
+\pagestyle{fancy}
+
+\fancyhead[L]{Coyne, Dedvukaj, Gao, Karabushin, Lin, Morales}
+\fancyhead[R]{Josh Morales}
+
+\begin{center}
+\textbf{\Large Homework 9} \\
+\text{Due date}: April 9th, 2025
+\end{center}
+
+\begin{enumerate}[leftmargin=0em]
+    %Problem 1
+    \item 
+
+    %Problem 2
+    \item
+    \begin{enumerate}[leftmargin=!]
+        %2a
+        \item 
+
+        %2b
+        \item 
+
+        %2c
+        \item
+
+    \end{enumerate}
+
+    %Problem 3
+    \item
+
+    %Problem 4
+    \item
+    Note that
+    \[A^{t} = VS^{t}U^{t}.\]
+    Since $U$ and $V$ are orthogonal, it suffices to show that the entries of $S$ are the singular values of $A^{t}$. Since ${[S^{t}]}_{ij} = S_{ji} = 0$ whenever $i\neq j$, we can see that the entries of $S^{t}$ are $0$ everywhere except the main diagonal, where ${[S^{t}]}_{ii} = S_{ii}$ for all $i$. Therefore, 
+    it suffices to show that the singular values\footnote{Note that the values are already decreasing by assumption that $USV^{t}$ is a singular value decomposition.} of $A^{t}$ are equal to the singular values of $A$. The singular values of $A^{t}$ are given by the square root of the eigenvalues of ${(A^{t})}^{t}A^{t} = {(A^{t}A)}^{t}$. However, we note that for any square matrix $B$, we have that the eigenvalues of $B$ are equal to the eigenvalues of $B^{t}$. Therefore, the eigenvalues of ${(A^{t}A)}^{t}$ are equal to the eigenvalues of
+    $A^{t}A$, which are precisely the square of the singular values of $A$. Therefore, the singular values of $A$ and $A^{t}$ are equal, and thus, $A^{t} = VS^{t}U^{t}$ is a singular value decomposition of $A^{t}$, which is the desired result.
+
+    %Problem 5
+    \item 
+
+    %Problem 6
+    \item
+    \begin{enumerate}[leftmargin=!]
+        %6a
+        \item 
+        Note that for all $y_1,y_2\in [c,d]$ and $t\in [a,b]$, we have that
+        \[|f(t,y_1)-f(t,y_2)| = |ty_{1}-ty_{2}| = |t||y_{1}-y_{2}|\leq b|y_{1}-y_{2}|.\]
+        Therefore, $f$ satisfies the Lipschitz condition.
+
+        %6b
+        \item
+        Separating variables, we see that
+        \[\int\frac{1}{y}\, dy\, = \int t\, dt\, \implies \ln(y) = \frac{t^2}{2}+c \implies y = e^{\frac{t^2}{2}+c} = Ce^{\frac{t^2}{2}}\]
+        for some constant $C$. Evaluating our initial condition gives
+        \[3=y(0) = e^{\frac{0}{2}}C=C.\]
+        Therefore, $y(t) = 3e^{\frac{t^2}{2}}$.
+
+        %6c
+        \item
+        As before, the general solution to $y'_{\varepsilon} = ty_{\varepsilon}$ is given by $y_{\varepsilon}(t) = Ce^{\frac{t^2}{2}}$ for some constant $C$. Evaluating at the initial condition gives
+        \[3+\varepsilon = C.\]
+        Therefore, $y_{\varepsilon}(t) = (3+\varepsilon)e^{\frac{t^2}{2}}$. Note that
+        \[\lim_{t \to \infty} |y(t)-y_{\varepsilon}(t)| = \lim_{t\to \infty} \left|3e^{\frac{t^2}{2}}-(3+\varepsilon)e^{\frac{t^2}{2}}\right| = \lim_{t\to \infty} \left|\varepsilon\right|e^{\frac{t^2}{2}}= \infty.\]
+        Despite being a slight perturbation of the original solution, the error can still grow quite large out for large values of $t$. 
+    \end{enumerate}
+\end{enumerate}
+
+\end{document}
