@@ -21,22 +21,50 @@
 
 \begin{enumerate}[leftmargin=0em]
     %Problem 1
-    \item 
-
+    \item
+    
     %Problem 2
     \item
     \begin{enumerate}[leftmargin=!]
         %2a
-        \item 
+        \item
+        \(A^{(1)} = Q^{(1)}R^{(1)}\). To find $Q^{(1)}$:
+        
+        \[v_{1}=\left[\begin{matrix}0\\ 1\end{matrix}\right]\
+        ||v_{1}||=\sqrt{0^{2}+1^{2}}=1, 
+        q_{1}=\frac{v_{1}}{||v_{1}||}=\left[\begin{matrix}0\\ 1\end{matrix}\right], 
+        v_{2}=\left[\begin{matrix}1\\ 0\end{matrix}\right]\]
+        \[v_{2}^{\prime }=v_{2}-(v_{2}\cdot q_{1})q_{1}=
+        \left[\begin{matrix}1\\ 0\end{matrix}\right]-(\left[\begin{matrix}1\\ 0\end{matrix}\right]\cdot
+        \left[\begin{matrix}0\\ 1\end{matrix}\right])
+        \left[\begin{matrix}0\\ 1\end{matrix}\right]=
+        \left[\begin{matrix}1\\ 0\end{matrix}\right]-0
+        \left[\begin{matrix}0\\ 1\end{matrix}\right]=
+        \left[\begin{matrix}1\\ 0\end{matrix}\right]\]
+        \[||v_{2}^{\prime }||=\sqrt{1^{2}+0^{2}}=1, 
+        v_{2}=\frac{v_{2}^{\prime }}{||v_{2}^{\prime }||}=\left[\begin{matrix}1\\ 0\end{matrix}\right]\]
+        \[Q^{(1)}=\left[\begin{matrix}0&1\\ 1&0\end{matrix}\right]\]
 
+        \[R^{(1)} = Q^{T}A = \left[\begin{matrix}0&1\\ 1&0\end{matrix}\right]\left[\begin{matrix}0&1\\ 1&0\end{matrix}\right]=\left[\begin{matrix}1&0\\ 0&1\end{matrix}\right]\]
+
+        \[A^{(2)} = R^{(1)}Q^{(1)} = \left[\begin{matrix}1&0\\ 0&1\end{matrix}\right]\left[\begin{matrix}0&1\\ 1&0\end{matrix}\right] = \left[\begin{matrix}0&1\\ 1&0\end{matrix}\right]\]
+
+        Since \(A^{(2)}=A\), the QR decomposition for $A^{(3)}$ will be the same as for $A^{(2)}$. So
+        \[A^{(3)} = \left[\begin{matrix}0&1\\ 1&0\end{matrix}\right]\]
+        \(A^{(2)}\) and \(A^{(3)}\) are both equal to the original matrix \(A\).
+        
         %2b
-        \item 
+        \item
+        In this case, the QR method does not calculate a diagonalization of $A$ because the eigenvalues of $A$ have the same magnitude. The characteristic polynomial is given by \(det(A-\lambda I)\), where \(I\) is the identity matrix.
+        \[det(A-\lambda I)=det\left(\begin{matrix}-\lambda &1\\ 1&-\lambda \end{matrix}\right)=(-\lambda )(-\lambda )-(1)(1)=\lambda ^{2}-1\]
+        so $\lambda$ is either $1$ or $-1$. Since the magnitudes of the eigenvalues are non-distinct, A does not converge to a diagonal matrix.
 
         %2c
         \item
+        See part (b).
 
     \end{enumerate}
-
+    
     %Problem 3
     \item
 
@@ -77,5 +105,4 @@
         Despite being a slight perturbation of the original solution, the error can still grow quite large out for large values of $t$. 
     \end{enumerate}
 \end{enumerate}
-
 \end{document}
